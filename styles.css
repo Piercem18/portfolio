@@ -1,0 +1,485 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+ }
+ a {
+    color: inherit; /* Or use the color you want for the active state */
+    text-decoration: none !important;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+ /* Your custom video container styling */
+ .dropdown-content{
+    display: none;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-menu-button{
+    display: none;
+}
+.visible{
+    display:block ;
+}
+.dropdown-content{
+    display: none;
+}
+.visible{
+    display:block ;
+}
+.dropdown-menu-button{
+   
+    color:black;
+    padding:16px;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+
+}
+
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+};
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:white;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px black;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover{
+    background-color: white;
+}
+ .video-container {
+   
+    margin: 0 auto; /* Center the video */
+    border: 1px solid #ccc; /* Add borders or other styling */
+    background-color: #f9f9f9; /* Set the background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    
+   
+}
+/* Set the video size to scale down within the container */
+
+
+.about-section {
+    padding: 20px; /* Add padding to create space between sections */
+}
+/* Hide the default video controls */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+/* Style the video as a background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    z-index: -1; /* Place the video behind the text */
+}
+
+/*name */
+.overlay-text1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4rem;
+   
+    z-index: 1; /* Place the text above the video */
+    
+}
+/*description */
+.overlay-text2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+   
+    z-index: 1; /* Place the text above the video */
+}
+/*UX */
+.overlay-text3a {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+   
+    
+    z-index: 1; /* Place the text above the video */
+}
+    /*front-end */
+.overlay-text3b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    
+    z-index: 1; /* Place the text above the video */
+}
+/*about */
+.overlay-text3c {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    z-index: 1; /* Place the text above the video */
+   
+}
+.linkedin img {
+    position: absolute;
+    top: 90%; /* Adjust the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: 50px; /* Adjust the height as needed */
+    width: 50px; /* Adjust the width as needed */
+    z-index: 1; /* Place the text above the video */
+}
+
+.empty{
+    height: 100vh;
+}
+
+.animated-text {
+    opacity: 0; /* Start with 0 opacity to make it invisible */
+    animation: fadeInText 7s ease-in 4s forwards; /* Animation properties */
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0; /* Start with 0 opacity */
+        color: white; /* Ensure text remains white at the end of animation */
+    }
+    20% {
+        opacity: 1; /* End with full opacity */
+        color: white; /* Ensure text remains white at the end of animation */
+    }
+    80%{
+        opacity: 1; /* End with full opacity */
+        color: white; /* Ensure text remains white at the end of animation */
+    }
+    100% {
+        opacity: 1; /* End with full opacity */
+        color: black; /* Ensure text remains white at the end of animation */
+    }
+}
+.headshot, .paragraph, .paraAndHeadshot{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.headshot img{
+   height:50vh;
+  
+border-radius: 10px;
+
+}
+.aboutTitle, .paragraph{
+    display: flex;
+    flex-direction: column;
+}
+.paragraph{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 20px;
+}
+.aboutTitle{
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+.headshot{
+    margin-left: 5vw;
+    align-items: center;
+   
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 10px;
+   
+   width: 50vw;
+}
+.UXProjectTitle, .solarWesbite{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+
+.solarPreviewImg img{
+    height:20vh;
+    width:25vw;
+}
+ .solarCard{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 15vw;
+}
+.solarCard, .solarCardTitle, .solarDescription{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+.download{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.solarDescription {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+}
+.LLLPreviewImg img{
+    height:20vh;
+    width:25vw;
+   
+   
+}
+.LLLPreviewImg, img{
+    height:20vh;
+    width:25vw;
+    display: flex;
+    justify-content: flex-end;
+
+}
+ .solarCard{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 15vw;
+}
+.solarCard, .LLLCardTitle, .LLLDescription{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+.download{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.LLLDescription {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+    margin-top: 3vh;
+   
+}
+.LLL{
+    margin-top: 25vh;
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 5vw;
+}
+.LLLCard{
+    margin-right: 10vw;
+    position: absolute;
+    margin-top: 9vh;
+   
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 55vh;
+    position: relative; /* Add relative positioning to the parent container */
+}
+ .contactMe, .businessCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.businessCard{
+   
+    align-items: center;
+    margin-top:10vh;
+    margin-bottom:10vh;
+    width:30vw;
+    
+}
+.businessCard p{
+    font-style: italic;
+}
+@media screen and (max-width:430px){
+    .headshot, .paragraph, .paraAndHeadshot{
+        display: flex;
+        flex-direction: column;
+    }
+    .LLL{
+        margin-top:600px;
+    }
+   
+    
+}
+@media screen and (max-width:1500px){
+    .headshot img{
+        width:350px;
+    }
+    .businessCard{
+        width: 350px;
+    }
+    .LLL{
+        margin-top:400px;
+    }
+   
+    }
+
+    @media screen and (max-width:1200px){
+        
+        .overlay-text1 {
+            top: 20%; /* Adjust the vertical position for the first overlay text */
+          }
+        
+          .overlay-text2{
+            top: 35%;
+          }
+        
+          .overlay-text3a,
+          .overlay-text3b,
+          .overlay-text3c {
+            top: 50%; /* Adjust the vertical position for the third, fourth, and fifth overlay texts */
+            
+          }
+         
+        
+    }
+
+    @media screen and (max-width:900px){
+        .overlay-text1 {
+            top: 20%; /* Adjust the vertical position for the first overlay text */
+          }
+        
+          .overlay-text2{
+            top: 45%;
+          }
+        
+          .overlay-text3a,
+          .overlay-text3b,
+          .overlay-text3c {
+            top: 60%; /* Adjust the vertical position for the third, fourth, and fifth overlay texts */
+            
+          }
+          
+          }
+        /* Your existing styles */
+
+
+  @media  screen and (max-width:700px) {
+    .dropdown-menu-button{
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+    .Nav{
+        display: none;
+    }
+    
+    
+  }
+    
+    @media screen and (max-width:600px){
+        .overlay-text1 {
+            top: 20%; /* Adjust the vertical position for the first overlay text */
+          }
+        
+          .overlay-text2{
+            top: 50%;
+          }
+        
+          .overlay-text3a,
+          .overlay-text3b,
+          .overlay-text3c {
+            top: 70%; /* Adjust the vertical position for the third, fourth, and fifth overlay texts */
+            
+          }
+          
+        
+    }
+    
+    
+    @media screen and (max-width:420px){
+        .overlay-text1 {
+            top: 20%; /* Adjust the vertical position for the first overlay text */
+          }
+        
+          .overlay-text2{
+            top: 55%;
+          }
+        
+          .overlay-text3a,
+          .overlay-text3b,
+          .overlay-text3c {
+            top: 80%; /* Adjust the vertical position for the third, fourth, and fifth overlay texts */
+            
+          }
+          .LLL{
+            margin-top:500px;
+        }
+          
+        }
+        @media screen and (max-width:390px){
+            .overlay-text1 {
+                top: 20%; /* Adjust the vertical position for the first overlay text */
+              }
+            
+              .overlay-text2{
+                top: 60%;
+              }
+            
+              .overlay-text3a,
+              .overlay-text3b,
+              .overlay-text3c {
+                top: 90%; /* Adjust the vertical position for the third, fourth, and fifth overlay texts */
+                
+              }
+              .LLL{
+                margin-top:550px;
+            }
+            }

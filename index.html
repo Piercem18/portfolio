@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Pierce</title>
+   
+
+
+    
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dropdown">
+        <img src="menu.png" class="dropdown-menu-button">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#UX">UX</a>
+          <a href="a">Front End</a>
+          <a href="#About">About</a>
+        </div>
+      </div>
+    <div class="empty"></div>
+    <div class="video-container">
+        <video class="video-background" autoplay muted >
+            <source src="3d-minimal-motion-design-2022-08-04-09-36-40-utc.mp4" type="video/mp4">
+            <!-- Add additional <source> elements for other formats -->
+            Your browser does not support the video tag.
+        </video>
+     
+
+        <div class="animated-text">
+            <h1 class="overlay-text1 overlay-text">Mary Pierce</h1>
+            <h2 class="overlay-text2 overlay-text"> A UX Designer and Front-End Developer Who Is Bridging the Gap Between Design and Development</h2>
+            <div class="Nav">
+                <a href="#UX"><h2 class="overlay-text3a overlay-text">UX</h2></a>
+                <h2 class="overlay-text3b overlay-text">Front-End</h2>
+                <a href="#About"><h2 class="overlay-text3c overlay-text">About</h2></a>
+            </div>
+            <div class="linkedin">
+                <a href ="https://www.linkedin.com/in/mary-m-pierce/" target="_blank">
+                    <img src="Black-linkedin-logo-design-on-transparent-background-PNG.png" alt="linkedin icon">
+                </a>
+            </div>
+        </div>
+        </div>
+  
+   
+
+    
+    <div class="aboutSection">
+        <div id="About" class="aboutTitle">
+            <h1>About</h1>
+        </div>
+        <div class="paraAndHeadshot">
+            <div class="headshot">
+                <img src="IMG-9176.jpg" alt="headshot">
+            </div>
+        <div class="paragraph">
+            <p>Hey there!</p>
+            <p>I'm Mary, I hold a bachelor's degree in Finance, complemented by a minor in Marketing.
+                 Currently, I'm working in Sales, but something exciting caught my attention – the rapidly evolving world of tech. I've decided to embrace this new path and make the switch to the Tech industry.
+            </p>
+            <p>
+             To prepare myself for this transition, I completed Google's UX design certificate course and took the initiative to become a self-taught web developer, following the Odin Project as my study path. I am also proficient in Python, and I'm continuously working on honing my skills in vanilla CSS, HTML, and Javascript. Design has always captivated me, and I find myself picking up CSS with ease, always eager to learn and grow.
+            </p>
+            <p>
+                Though my background lies in Finance, Sales, and Marketing, I'm open to exploring all sorts of job opportunities. However, I can see myself thriving in fields like e-commerce or digital marketing, where I can leverage my diverse skill set.
+
+            </p>
+            <p>
+                My true passion and goal for myself as a designer and developer lies in crafting beautiful websites that not only showcase great design but also prove to be effective in converting visitors into loyal customers. There's something incredibly satisfying about seeing my work come to life in such a tangible way.
+
+            </p>
+            <p> 
+                I’m currently open to work! So, if you have any opportunities or projects that align with my aspirations, I'd love to chat more about them. I have linked my digital business card at the bottom of this page.
+
+            </p>
+
+        </div>
+        
+        </div>
+    </div>
+
+<div id="UX" class="UXProjects">
+    <h1 class="UXProjectTitle">UX Projects</h1>
+
+    <div class="solarWesbite">
+        <div class="solarPreviewImg">
+            <img src="solarPreview.png" alt="Preview of Case Study">
+        </div>
+        <div class="solarCard card">
+            <h2 class="solarCardTitle">
+                Net Metering Program
+            </h2>
+            <p class="solarDescription">
+                As the UX designer at my current company, I revamped the website I had previously developed. Initially, I had created a utility portal for customers after booking appointments over the phone. However, some customers requested more information before committing. To address this, I collaborated with my boss to strike the right balance between excitement and trust. The result was a transformed landing page, which now serves as the perfect solution for our clients.
+            </p>
+            <a class="download" href="SolarCaseStudy.pdf" target="_blank" download>Download Case Study</a>
+
+        </div>
+    </div>
+
+    <div class="LLL">
+        <div class="LLLPreviewImg">
+            <img src="LLLPreview.png" alt="Preview of Case Study">
+        </div>
+        <div class="LLLCard card">
+            <h2 class="LLLCardTitle">
+                Lit Language Learner
+            </h2>
+            <p class="LLLDescription">
+                During the Google UX Design certificate course, I created the Lit Language Learner app for social good. The objective was to assist people in learning to read in a new language. Using AI, the app focuses on conversational skills and emphasizes commonly used words, enabling users to quickly learn topics they find most relevant and stay motivated.
+            </p>
+            <a class="download" href="LLLCaseStudy.pdf" target="_blank" download>Download Case Study</a>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="contact">
+    <h1 class="contactMe">Contact Me</h1>
+    <div class="businessCard card">
+        <h3 class="name"> Mary Pierce</h3>
+        <p class="position">UX Designer - Front End Developer</p>
+        <p class="email">m.mck.pierce@gmail.com</p>
+        <p class="website">marypierce.me</p>
+    </div>
+</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // click event for button and display menu
+    const dropDownButton = document.querySelector(".dropdown-menu-button");
+    dropDownButton.addEventListener("click", function displayDropDownMenu() {
+      document.getElementById("myDropdown").classList.toggle("visible");
+    });
+  
+    // click event for window (off button click) that hides menu
+    window.addEventListener("click", function hideDropDownMenu(event) {
+      if (event.target !== dropDownButton) {
+        document.getElementById("myDropdown").classList.remove("visible");
+      }
+    });
+  });
+ 
+    </script>
+</body>
+</html>
