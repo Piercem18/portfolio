@@ -277,6 +277,8 @@ border-radius: 10px;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
 }
 
 .solarDescription {
@@ -338,7 +340,7 @@ border-radius: 10px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 55vh;
+    margin-top: 45vh;
     position: relative; /* Add relative positioning to the parent container */
 }
  .contactMe, .businessCard{
@@ -396,6 +398,7 @@ border-radius: 10px;
        }
        .overlay-text2{
         font-size: 20px;
+        top:50%
        }
      }
    
@@ -408,7 +411,7 @@ border-radius: 10px;
         margin-top:700px;
     }
     .contact{
-        margin-top: 65vh;
+        margin-top: 75vh;
     }
 }
    
